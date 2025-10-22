@@ -1,0 +1,178 @@
+[
+  {
+    "id": 1,
+    "marca": "Okuma",
+    "categoria": "cania",
+    "modelo": "Corvina",
+    "tipo": "Surfcasting",
+    "precio": 1201.5,
+    "stock": 15,
+    "img": "/img/corvina.jpg",
+    "alt": "cania"
+  },
+  {
+    "id": 2,
+    "marca": "Okuma",
+    "categoria": "cania",
+    "modelo": "Underwater",
+    "tipo": "Surfcasting",
+    "precio": 1202.5,
+    "stock": 15,
+    "img": "/img/underwater.jpg",
+    "alt": "cania"
+  },
+  {
+    "id": 3,
+    "marca": "Okuma",
+    "categoria": "cania",
+    "modelo": "Longitud",
+    "tipo": "Surfcasting",
+    "precio": 123.5,
+    "stock": 15,
+    "img": "/img/longitud.jpg",
+    "alt": "cania"
+  },
+  {
+    "id": 4,
+    "marca": "Okuma",
+    "categoria": "reel",
+    "modelo": "Inc6000",
+    "tipo": "Surfcasting",
+    "precio": 120.5,
+    "stock": 15,
+    "img": "/img/inc6000.jpg",
+    "alt": "reel"
+  },
+  {
+    "id": 5,
+    "marca": "Okuma",
+    "categoria": "reel",
+    "modelo": "Custom",
+    "tipo": "Surfcasting",
+    "precio": 120.5,
+    "stock": 15,
+    "img": "/img/custom.jpg",
+    "alt": "reel"
+  },
+  {
+    "id": 6,
+    "marca": "Okuma",
+    "categoria": "reel",
+    "modelo": "ReelRock",
+    "tipo": "Surfcasting",
+    "precio": 120.5,
+    "stock": 15,
+    "img": "/img/reelrock.jpg",
+    "alt": "reel"
+  },
+  {
+    "id": 7,
+    "marca": "Mustand",
+    "categoria": "anzuelo",
+    "modelo": "AnzueloTriple",
+    "precio": 120.5,
+    "stock": 15,
+    "img": "/img/anzuelotriple.jpg",
+    "alt": "anzuelo"
+  },
+  {
+    "id": 8,
+    "marca": "Payo",
+    "categoria": "bolso",
+    "modelo": "Payo",
+    "precio": 120.5,
+    "stock": 15,
+    "img": "/img/bolso.jpg",
+    "alt": "bolso"
+  },
+  {
+    "id": 9,
+    "marca": "Amberjack",
+    "categoria": "caja",
+    "modelo": "Caja",
+    "precio": 120.5,
+    "stock": 15,
+    "img": "/img/caja.jpg",
+    "alt": "caja"
+  },
+  {
+    "id": 10,
+    "marca": "Payo",
+    "categoria": "cuchara",
+    "modelo": "Cuchara",
+    "precio": 120.5,
+    "stock": 15,
+    "img": "/img/cuchara.jpg",
+    "alt": "cuchara"
+  },
+  {
+    "id": 11,
+    "marca": "Grilon",
+    "categoria": "nylon",
+    "modelo": "Nylon",
+    "precio": 120.5,
+    "stock": 15,
+    "img": "/img/nylon.jpg",
+    "alt": "Nylon"
+  },
+  {
+    "id": 12,
+    "marca": "Payo",
+    "categoria": "senuelos",
+    "modelo": "ReelRock",
+    "precio": 120.5,
+    "stock": 15,
+    "img": "/img/senuelored.jpg",
+    "alt": "senuelos"
+  },
+  {
+    "id": 13,
+    "marca": "Payo",
+    "categoria": "senuelos",
+    "modelo": "Senuelos",
+    "precio": 120.5,
+    "stock": 15,
+    "img": "/img/senuelogreen.jpg",
+    "alt": "senuelos"
+  },
+  {
+    "id": 14,
+    "marca": "Grilon",
+    "categoria": "reel",
+    "modelo": "Multi",
+    "precio": 120.5,
+    "stock": 15,
+    "img": "/img/multi.jpg",
+    "alt": "Multi"
+  },
+  {
+    "id": 15,
+    "marca": "Sasame",
+    "categoria": "anzuelo",
+    "modelo": "K",
+    "precio": 120.5,
+    "stock": 15,
+    "img": "/img/k.jpg",
+    "alt": "K"
+  },
+  {
+    "id": 16,
+    "marca": "Sasame",
+    "categoria": "anzuelo",
+    "modelo": "Kamaura",
+    "precio": 120.5,
+    "stock": 15,
+    "img": "/img/kamaura.jpg",
+    "alt": "Kamaura"
+  },
+  {
+    "id": 17,
+    "marca": "Payo",
+    "categoria": "cable",
+    "modelo": "Cable",
+    "precio": 120.5,
+    "stock": 15,
+    "img": "/img/cable.jpg",
+    "alt": "Cable"
+  }
+]

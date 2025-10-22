@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "Combo Canias y Reel Okuma",
+    "description": "Combos de alto rendimiento",
+    "img": "/img/caniasyreel.jpg",
+    "alt": "cania y reel"
+  },
+  {
+    "id": 2,
+    "title": "Accesorios Okuma",
+    "description": "Soluciones para tu pesca",
+    "img": "/img/accesorios.jpg",
+    "alt": "accesorios"
+  },
+  {
+    "id": 3,
+    "title": "Vestimenta Okuma",
+    "description": "Todo para tu pesca",
+    "img": "/img/caniasyreel.jpg",
+    "alt": "vestimenta"
+  }
+]
