@@ -1,27 +1,39 @@
-import { Link } from "react-router-dom"
-import { Button } from "./Button"
-
+import { Link } from "react-router-dom";
+import { Button } from "./Button";
+import { useEffect, useState } from "react";
+import categorias from "../mock/categorias.json";
 
 export const ForCategories = () => {
+  const [categories, setCategories] = useState([]);
+
+  useEffect(() => {
+    setCategories(categorias);
+  }, []);
+
   return (
     <div className="">
-        <div className="bg-[#F2F2F2] m-10 rounded-lg p-5">
-        <h2>Para Categorias</h2>
-      <div className="grid grid-cols-6 gap-10">
-        <div className="flex flex-col p-5 bg-white rounded-lg border">
-          <div>
-            <img src="" alt="" />
-          </div>
-          <div className="flex flex-col">
-            <h2>Combos Cania y Reel Pro Angler</h2>
-            <p>Combos de alto rendimiento para pescadores serios</p>
-            <Link to="/listproduct">
-              <Button boton="Ver Producto" />
-            </Link>
-          </div>
+      <div className="bg-[#F2F2F2] m-10 rounded-lg p-5">
+        <h2 className="text-2xl font-bold">Para Categorias</h2>
+        <div className="grid grid-cols-5 gap-10">
+          {categories?.map((category) => (
+            <div className="flex flex-col p-5 justify-center items-center bg-white rounded-lg border border-gray-400 ">
+              <div>
+                <img
+                  src={category.img}
+                  alt=""
+                  className="object-contain h-[200px] "
+                />
+              </div>
+              <div className="flex flex-col items-center gap-5">
+                <h2 className="text-xl font-bold">{category.name}</h2>
+                <Link to="/listproduct">
+                  <Button boton="Ver Producto" />
+                </Link>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </div>
-    </div>
-  )
-}
+  );
+};

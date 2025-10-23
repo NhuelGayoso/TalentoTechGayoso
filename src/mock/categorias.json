@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Reel",
+    "img": "/img/inc6000.jpg"
+  },{
+    "id": 2,
+    "name": "Canias",
+    "img": "/img/longitud.jpg"
+  },{
+    "id": 3,
+    "name": "Accesorios",
+    "img": "/img/caja.jpg"
+  },{
+    "id": 4,
+    "name": "Lineas",
+    "img": "/img/nylon.jpg"
+  },{
+    "id": 5,
+    "name": "Anzuelos",
+    "img": "/img/kamaura.jpg"
+  }
+]
