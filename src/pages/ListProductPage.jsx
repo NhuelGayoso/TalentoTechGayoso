@@ -14,7 +14,7 @@ export const ListProductPage = () => {
       <h2>Productos</h2>
       <div className="grid grid-cols-3 gap-10">
         {products?.map((product) => (
-          <Card product={product} />
+          <Card key={product.id} product={product} />
         ))}
       </div>
     </div>

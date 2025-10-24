@@ -29,7 +29,7 @@ export const Card = ({ product }) => {
               </p>
             </div>
             <button className="w-full bg-green-600 hover:bg-green-700 text-white font-medium py-3 rounded-lg transition-colors">
-              <Link to="/listproduct">Agregar al carrito</Link>
+              <Link to={`/listproduct/${product.id} state=${product}`}>Mas Detalles</Link>
             </button>
           </div>
         </div>
