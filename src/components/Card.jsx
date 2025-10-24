@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Button } from "./Button";
 
 export const Card = ({ product }) => {
   return (
@@ -28,9 +29,10 @@ export const Card = ({ product }) => {
                 ${product.precio}
               </p>
             </div>
-            <button className="w-full bg-green-600 hover:bg-green-700 text-white font-medium py-3 rounded-lg transition-colors">
-              <Link to={`/listproduct/${product.id} state=${product}`}>Mas Detalles</Link>
-            </button>
+
+            <Link to={`/listproduct/${product.id} state=${product}`}>
+              <Button boton="Mas Detalles"></Button>
+            </Link>
           </div>
         </div>
       </div>

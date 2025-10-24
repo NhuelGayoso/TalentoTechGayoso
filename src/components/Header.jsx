@@ -1,5 +1,6 @@
 import logo from "/img/Logo.png";
 import { Navbar } from "./Navbar";
+import { HeaderWidget } from "./HeaderWidget";
 
 export const Header = () => {
   return (
@@ -10,6 +11,9 @@ export const Header = () => {
       </div>
       <div>
         <Navbar />
+      </div>
+      <div>
+        <HeaderWidget />
       </div>
     </header>
   );
