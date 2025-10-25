@@ -16,7 +16,7 @@ export const HomePages = () => {
   }, []);
 
   return (
-    <div>
+    <div className="animate-fade-up">
       <div
         style={{ backgroundImage: `url(${river})`, opacity: 0.9 }}
         className="bg-cover bg-center h-100 flex justify-center items-center "

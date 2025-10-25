@@ -13,7 +13,7 @@ export const ForCategories = () => {
   return (
     <div className="">
       <div className="bg-[#F2F2F2] m-10 rounded-lg p-5">
-        <h2 className="text-2xl font-bold">Para Categorias</h2>
+        <h2 className="text-2xl font-bold">Por Categorias</h2>
         <div className="grid grid-cols-5 gap-10">
           {categories?.map((category) => (
             <div className="flex flex-col p-5 justify-center items-center bg-white rounded-lg border border-gray-400 ">
@@ -27,7 +27,7 @@ export const ForCategories = () => {
               <div className="flex flex-col items-center gap-5">
                 <h2 className="text-xl font-bold">{category.name}</h2>
                 <Link to="/listproduct">
-                  <Button boton="Ver Producto" />
+                  <Button boton="Ver Mas" />
                 </Link>
               </div>
             </div>

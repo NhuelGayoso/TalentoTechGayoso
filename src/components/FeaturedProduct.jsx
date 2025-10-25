@@ -9,7 +9,7 @@ export const FeaturedProduct = ({ products }) => {
         {products?.map((product) => (
           <div className="flex flex-col p-5 bg-white rounded-lg border-gray-400 border">
             <div>
-              <img src={product.img} alt="" className="rounded-lg  object-cover h-[250px] w-[350px]" />
+              <img src={product.img} alt="" className="rounded-lg  object-cover h-[250px] w-full" />
             </div>
             <div className="flex flex-col items-center">
               <h2 className="text-xl font-bold">{product.title}</h2>

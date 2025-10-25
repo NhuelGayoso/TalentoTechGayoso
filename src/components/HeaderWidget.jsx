@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export const HeaderWidget = () => {
   return (
-    <div className="flex items-center gap-5 justify-end">
+    <div className="flex items-center gap-5 justify-end mr-5">
       <div className="flex items-center gap-2">
         <Link to="/wishlist">
           <FaHeart className="text-white" />
@@ -15,7 +15,7 @@ export const HeaderWidget = () => {
           <FaShoppingCart />
         </Link>
       </div>
-      <div className="flex items-center gap-2">
+      <div>
         <Link to="/login">
           <FaUser />
         </Link>

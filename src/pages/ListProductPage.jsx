@@ -10,7 +10,7 @@ export const ListProductPage = () => {
   }, []);
 
   return (
-    <div className="flex flex-col  p-10">
+    <div className="flex flex-col  p-10 animate-fade-up">
       <h2>Productos</h2>
       <div className="grid grid-cols-3 gap-10">
         {products?.map((product) => (

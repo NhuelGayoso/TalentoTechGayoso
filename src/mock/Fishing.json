@@ -2,21 +2,26 @@
   {
     "id": 1,
     "marca": "Okuma",
-    "categoria": "cania",
-    "modelo": "Corvina",
+    "categoria": "Caña",
+    "descripcion": "La Okuma Corvina Express es una caña diseñada para pescadores exigentes que buscan potencia, distancia y precisión en cada lanzamiento. Su construcción en grafito de alto módulo garantiza una estructura liviana, reactiva y extremadamente resistente, ideal para pesca de corvina negra y variada de costa o ría.",
+    "modelo": "Caña Okuma Corvina Express 4.26 mts 2 tramos",
     "tipo": "Surfcasting",
-    "precio": 1201.5,
-    "stock": 15,
+    "precio": "403.791",
+    "grafito": "100% Grafito de Alto Rendimiento",
+    "longitud": "4.26 mts",
     "img": "/img/corvina.jpg",
     "alt": "cania"
   },
   {
     "id": 2,
     "marca": "Okuma",
-    "categoria": "cania",
-    "modelo": "Underwater",
+    "categoria": "Caña",
+    "modelo": "Caña Okuma UnderWater 4.26 mts 180-280g 3 tramos",
     "tipo": "Surfcasting",
-    "precio": 1202.5,
+    "grafito": "Composición CARBONO 24T/30T",
+    "longitud": "4.26 mts",
+    "accion": "Acción 180-280 grs.",
+    "precio": "355.371",
     "stock": 15,
     "img": "/img/underwater.jpg",
     "alt": "cania"
@@ -24,10 +29,14 @@
   {
     "id": 3,
     "marca": "Okuma",
-    "categoria": "cania",
-    "modelo": "Longitud",
+    "categoria": "Caña",
+    "modelo": "CAÑA OKUMA LONGITUDE TSS 4.26 MTS 2 TRAMOS",
+    "descripcion": "🎣 La Okuma Longitude TSS 4,26 mts es la elección ideal para pescadores que buscan máximo alcance, potencia y control en cada lance desde la costa.",
     "tipo": "Surfcasting",
-    "precio": 123.5,
+    "grafito": "",
+    "longitud": "4.26 mts",
+    "accion": "Acción 100 – 250 grs.",
+    "precio": "288.000",
     "stock": 15,
     "img": "/img/longitud.jpg",
     "alt": "cania"
@@ -35,10 +44,11 @@
   {
     "id": 4,
     "marca": "Okuma",
-    "categoria": "reel",
-    "modelo": "Inc6000",
+    "categoria": "Reel",
+    "modelo": "Reel Okuma INC-6000",
+    "descripcion": "El Reel Okuma INC-6000 es la herramienta ideal para pescadores que buscan un reel duradero, con capacidad para lanzamientos largos y un sistema de freno eficiente. Su diseño compacto y características avanzadas lo convierten en una opción perfecta para diversas técnicas de pesca.",
     "tipo": "Surfcasting",
-    "precio": 120.5,
+    "precio": "159.000",
     "stock": 15,
     "img": "/img/inc6000.jpg",
     "alt": "reel"
@@ -46,10 +56,11 @@
   {
     "id": 5,
     "marca": "Okuma",
-    "categoria": "reel",
-    "modelo": "Custom",
+    "categoria": "Reel",
+    "modelo": "Reel Okuma Custom Black 60 3+1 Rulemanes. Lance De Costa",
+    "descripcion": "El Okuma Custom Black CB-60 está diseñado para ser un referente en la pesca de largas distancias. Su carcasa ultra fina Blade Body y su bobina Long Cast de aluminio trabajado garantizan un rendimiento superior y un equilibrio perfecto con cañas de 10 a 13 pies.",
     "tipo": "Surfcasting",
-    "precio": 120.5,
+    "precio": "166.000",
     "stock": 15,
     "img": "/img/custom.jpg",
     "alt": "reel"
@@ -57,10 +68,11 @@
   {
     "id": 6,
     "marca": "Okuma",
-    "categoria": "reel",
-    "modelo": "ReelRock",
+    "categoria": "Reel",
+    "modelo": "Reel Okuma Rockaway Ra-6000 Frontal Lance De Costa",
+    "descripcion":"El RA-6000 está diseñado para pescadores que buscan un reel potente, resistente y de alto rendimiento. Con un sistema de 5 rodamientos, freno de 12 kg y un carretel de aluminio anodizado de “long cast”, ofrece lances más largos, recogida suave y gran durabilidad.",
     "tipo": "Surfcasting",
-    "precio": 120.5,
+    "precio": "174.677",
     "stock": 15,
     "img": "/img/reelrock.jpg",
     "alt": "reel"
@@ -68,9 +80,9 @@
   {
     "id": 7,
     "marca": "Mustand",
-    "categoria": "anzuelo",
+    "categoria": "Anzuelo",
     "modelo": "AnzueloTriple",
-    "precio": 120.5,
+    "precio": "120.5",
     "stock": 15,
     "img": "/img/anzuelotriple.jpg",
     "alt": "anzuelo"
@@ -78,7 +90,7 @@
   {
     "id": 8,
     "marca": "Payo",
-    "categoria": "bolso",
+    "categoria": "Bolso",
     "modelo": "Payo",
     "precio": 120.5,
     "stock": 15,
@@ -88,7 +100,7 @@
   {
     "id": 9,
     "marca": "Amberjack",
-    "categoria": "caja",
+    "categoria": "Caja",
     "modelo": "Caja",
     "precio": 120.5,
     "stock": 15,
@@ -98,7 +110,7 @@
   {
     "id": 10,
     "marca": "Payo",
-    "categoria": "cuchara",
+    "categoria": "Cuchara",
     "modelo": "Cuchara",
     "precio": 120.5,
     "stock": 15,
@@ -108,7 +120,7 @@
   {
     "id": 11,
     "marca": "Grilon",
-    "categoria": "nylon",
+    "categoria": "Nylon",
     "modelo": "Nylon",
     "precio": 120.5,
     "stock": 15,
@@ -118,7 +130,7 @@
   {
     "id": 12,
     "marca": "Payo",
-    "categoria": "senuelos",
+    "categoria": "Señuelos",
     "modelo": "ReelRock",
     "precio": 120.5,
     "stock": 15,
@@ -128,7 +140,7 @@
   {
     "id": 13,
     "marca": "Payo",
-    "categoria": "senuelos",
+    "categoria": "Señuelos",
     "modelo": "Senuelos",
     "precio": 120.5,
     "stock": 15,
@@ -138,7 +150,7 @@
   {
     "id": 14,
     "marca": "Grilon",
-    "categoria": "reel",
+    "categoria": "Nylon",
     "modelo": "Multi",
     "precio": 120.5,
     "stock": 15,
@@ -148,7 +160,7 @@
   {
     "id": 15,
     "marca": "Sasame",
-    "categoria": "anzuelo",
+    "categoria": "Anzuelo",
     "modelo": "K",
     "precio": 120.5,
     "stock": 15,
@@ -158,7 +170,7 @@
   {
     "id": 16,
     "marca": "Sasame",
-    "categoria": "anzuelo",
+    "categoria": "Anzuelo",
     "modelo": "Kamaura",
     "precio": 120.5,
     "stock": 15,
@@ -168,7 +180,7 @@
   {
     "id": 17,
     "marca": "Payo",
-    "categoria": "cable",
+    "categoria": "Cable",
     "modelo": "Cable",
     "precio": 120.5,
     "stock": 15,

@@ -3,7 +3,7 @@ import { Button } from "./Button";
 
 export const Card = ({ product }) => {
   return (
-    <div className=" bg-gray-400 flex items-center justify-center p-4 rounded-lg">
+    <div className=" bg-gray-400 flex items-center justify-center p-5 rounded-lg">
       <div className="max-w-sm w-full bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all">
         <div className="relative">
           <img
@@ -29,10 +29,15 @@ export const Card = ({ product }) => {
                 ${product.precio}
               </p>
             </div>
-
-            <Link to={`/listproduct/${product.id} state=${product}`}>
-              <Button boton="Mas Detalles"></Button>
-            </Link>
+            <hr className="my-4" />
+            <div className="flex items-center gap-2">
+              <Link to={`/listproduct/${product.id}`} state={{ product }}>
+                <Button boton="Mas Detalles"></Button>
+              </Link>
+              <Link to={`/cart/${product.id}`} state={{ product }}>
+                <Button boton="Agregar al carrito"></Button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
