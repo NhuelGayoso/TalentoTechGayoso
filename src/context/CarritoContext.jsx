@@ -1,26 +1,21 @@
-import { createContext, useState } from "react";
+import React, { createContext, useState } from "react";
+// Crear el contexto
+export const CarritoContext = createContext();
+// Proveedor del contexto
 
-//1. crear el contexto
-const CarritoContext = createContext();
-
-//2. crear el provider
-export const CarritoProvider = ({ children }) => {
+export function CarritoProvider({ children }) {
   const [carrito, setCarrito] = useState([]);
-
   const agregarAlCarrito = (producto) => {
     setCarrito([...carrito, producto]);
-  };
-  const eliminarDelCarrito = (producto) => {
-    const nuevoCarrito = carrito.filter((item) => item.id !== producto.id);
-    setCarrito(nuevoCarrito);
   };
   const vaciarCarrito = () => {
     setCarrito([]);
   };
-
   return (
-    <CarritoContext.Provider value={{ carrito, agregarAlCarrito, eliminarDelCarrito, vaciarCarrito }}>
+    <CarritoContext.Provider
+      value={{ carrito, agregarAlCarrito, vaciarCarrito }}
+    >
       {children}
     </CarritoContext.Provider>
   );
-};
+}

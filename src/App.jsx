@@ -1,6 +1,5 @@
-
 import { Header } from "./components/Header";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route} from "react-router-dom";
 import { HomePages } from "./pages/HomePages";
 import { ListProductPage } from "./pages/ListProductPage";
 import { ContactPage } from "./pages/ContactPage";
@@ -11,6 +10,7 @@ import { CartPage } from "./pages/CartPage";
 import { AboutPage } from "./pages/AboutPage";
 
 export const App = () => {
+
   return (
     <>
       <Header />

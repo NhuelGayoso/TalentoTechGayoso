@@ -1,7 +1,10 @@
 import { Link } from "react-router-dom";
 import { Button } from "./Button";
+import { useContext } from "react";
+import { CarritoContext } from "../context/CarritoContext";
 
 export const Card = ({ product }) => {
+  const {agregarAlCarrito} = useContext(CarritoContext);
   return (
     <div className=" bg-gray-400 flex items-center justify-center p-5 rounded-lg">
       <div className="max-w-sm w-full bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all">
@@ -36,7 +39,7 @@ export const Card = ({ product }) => {
                 <Button boton="Mas Detalles"></Button>
               </Link>
               <Link to={`/cart/${product.id}`} state={{ product }}>
-                <Button boton="Agregar al carrito"></Button>
+                <Button boton="Agregar al carrito" onClick={() => agregarAlCarrito(product)}></Button>
               </Link>
             </div>
           </div>
