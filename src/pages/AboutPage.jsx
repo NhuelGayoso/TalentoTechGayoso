@@ -1,10 +1,10 @@
 export const AboutPage = () => {
   return (
-    <div className=" flex flex-col items-center bg-gray-200  justify-center text-left m-auto animate-fade-up">
+    <div className=" flex flex-col items-center bg-gray-300  justify-center text-left m-auto animate-fade-up">
       <div className="flex flex-col gap-10 w-[80%] m-10 p-10 bg-white rounded-lg">
         <h2 className="text-2xl font-bold ">Quienes Somos</h2>
         <div className="flex flex-col gap-10 w-[80%]">
-          <p className="text-lg">
+          <p>
             Somos un grupo de apasionados por la pesca que, desde 2004,
             trabajamos para acercarte los mejores productos y equipos para tus
             aventuras en el agua. Con más de 20 años de experiencia, conocemos

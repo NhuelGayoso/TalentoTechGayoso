@@ -17,10 +17,10 @@ export const DetailProductPage = () => {
 
   return (
     <div
-      className="h-[80vh] max-w-4xl mx-auto bg-gray-400 shadow-lg rounded-lg overflow-hidden m-5 text-black"
+      className="flex flex-col max-w-4xl mx-auto bg-gray-400 shadow-lg rounded-lg overflow-hidden m-5 text-black"
       key={id}
     >
-      <div className="flex  items-center  ">
+      <div className="flex flex-col lg:flex-row items-center  ">
         <div className="md:w-1/2 p-5 relative">
           <div className=" ">
             <img
