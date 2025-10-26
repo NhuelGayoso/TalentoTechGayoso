@@ -15,6 +15,7 @@ export const Card = ({ product }) => {
 
         <div className="p-5 space-y-4">
           <div>
+            
             <h3 className="text-xl font-bold text-gray-900">
               {product.modelo}
             </h3>

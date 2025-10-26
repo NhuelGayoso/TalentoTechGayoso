@@ -15,7 +15,7 @@ export const FeaturedProduct = ({ products }) => {
               <h2 className="text-xl font-bold">{product.title}</h2>
               <p className="text-lg">{product.description}</p>
               <Link to="/listproduct" className="mt-5">
-                <Button boton="Ver Producto" />
+                <Button boton="Ver Productos" />
               </Link>
             </div>
           </div>

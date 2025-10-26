@@ -4,11 +4,17 @@ import "./index.css";
 
 import { BrowserRouter } from "react-router-dom";
 import { App } from "./App";
+import { FilterProvider } from "./context/FilterContext";
+import { CarritoProvider } from "./context/CarritoContext";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
-      <App />
+      <FilterProvider>
+        <CarritoProvider>
+          <App />
+        </CarritoProvider>
+      </FilterProvider>
     </BrowserRouter>
   </StrictMode>
 );

@@ -2,7 +2,7 @@
   {
     "id": 1,
     "marca": "Okuma",
-    "categoria": "Caña",
+    "category": "Caña",
     "descripcion": "La Okuma Corvina Express es una caña diseñada para pescadores exigentes que buscan potencia, distancia y precisión en cada lanzamiento. Su construcción en grafito de alto módulo garantiza una estructura liviana, reactiva y extremadamente resistente, ideal para pesca de corvina negra y variada de costa o ría.",
     "modelo": "Caña Okuma Corvina Express 4.26 mts 2 tramos",
     "tipo": "Surfcasting",
@@ -15,7 +15,7 @@
   {
     "id": 2,
     "marca": "Okuma",
-    "categoria": "Caña",
+    "category": "Caña",
     "modelo": "Caña Okuma UnderWater 4.26 mts 180-280g 3 tramos",
     "tipo": "Surfcasting",
     "grafito": "Composición CARBONO 24T/30T",
@@ -29,7 +29,7 @@
   {
     "id": 3,
     "marca": "Okuma",
-    "categoria": "Caña",
+    "category": "Caña",
     "modelo": "CAÑA OKUMA LONGITUDE TSS 4.26 MTS 2 TRAMOS",
     "descripcion": "🎣 La Okuma Longitude TSS 4,26 mts es la elección ideal para pescadores que buscan máximo alcance, potencia y control en cada lance desde la costa.",
     "tipo": "Surfcasting",
@@ -44,7 +44,7 @@
   {
     "id": 4,
     "marca": "Okuma",
-    "categoria": "Reel",
+    "category": "Reel",
     "modelo": "Reel Okuma INC-6000",
     "descripcion": "El Reel Okuma INC-6000 es la herramienta ideal para pescadores que buscan un reel duradero, con capacidad para lanzamientos largos y un sistema de freno eficiente. Su diseño compacto y características avanzadas lo convierten en una opción perfecta para diversas técnicas de pesca.",
     "tipo": "Surfcasting",
@@ -56,7 +56,7 @@
   {
     "id": 5,
     "marca": "Okuma",
-    "categoria": "Reel",
+    "category": "Reel",
     "modelo": "Reel Okuma Custom Black 60 3+1 Rulemanes. Lance De Costa",
     "descripcion": "El Okuma Custom Black CB-60 está diseñado para ser un referente en la pesca de largas distancias. Su carcasa ultra fina Blade Body y su bobina Long Cast de aluminio trabajado garantizan un rendimiento superior y un equilibrio perfecto con cañas de 10 a 13 pies.",
     "tipo": "Surfcasting",
@@ -68,9 +68,9 @@
   {
     "id": 6,
     "marca": "Okuma",
-    "categoria": "Reel",
+    "category": "Reel",
     "modelo": "Reel Okuma Rockaway Ra-6000 Frontal Lance De Costa",
-    "descripcion":"El RA-6000 está diseñado para pescadores que buscan un reel potente, resistente y de alto rendimiento. Con un sistema de 5 rodamientos, freno de 12 kg y un carretel de aluminio anodizado de “long cast”, ofrece lances más largos, recogida suave y gran durabilidad.",
+    "descripcion": "El RA-6000 está diseñado para pescadores que buscan un reel potente, resistente y de alto rendimiento. Con un sistema de 5 rodamientos, freno de 12 kg y un carretel de aluminio anodizado de “long cast”, ofrece lances más largos, recogida suave y gran durabilidad.",
     "tipo": "Surfcasting",
     "precio": "174.677",
     "stock": 15,
@@ -80,7 +80,7 @@
   {
     "id": 7,
     "marca": "Mustand",
-    "categoria": "Anzuelo",
+    "category": "Anzuelo",
     "modelo": "AnzueloTriple",
     "precio": "120.5",
     "stock": 15,
@@ -90,7 +90,7 @@
   {
     "id": 8,
     "marca": "Payo",
-    "categoria": "Bolso",
+    "category": "Bolso",
     "modelo": "Payo",
     "precio": 120.5,
     "stock": 15,
@@ -100,7 +100,7 @@
   {
     "id": 9,
     "marca": "Amberjack",
-    "categoria": "Caja",
+    "category": "Caja",
     "modelo": "Caja",
     "precio": 120.5,
     "stock": 15,
@@ -110,7 +110,7 @@
   {
     "id": 10,
     "marca": "Payo",
-    "categoria": "Cuchara",
+    "category": "Cuchara",
     "modelo": "Cuchara",
     "precio": 120.5,
     "stock": 15,
@@ -120,7 +120,7 @@
   {
     "id": 11,
     "marca": "Grilon",
-    "categoria": "Nylon",
+    "category": "Nylon",
     "modelo": "Nylon",
     "precio": 120.5,
     "stock": 15,
@@ -130,7 +130,7 @@
   {
     "id": 12,
     "marca": "Payo",
-    "categoria": "Señuelos",
+    "category": "Señuelos",
     "modelo": "ReelRock",
     "precio": 120.5,
     "stock": 15,
@@ -140,7 +140,7 @@
   {
     "id": 13,
     "marca": "Payo",
-    "categoria": "Señuelos",
+    "category": "Señuelos",
     "modelo": "Senuelos",
     "precio": 120.5,
     "stock": 15,
@@ -150,7 +150,7 @@
   {
     "id": 14,
     "marca": "Grilon",
-    "categoria": "Nylon",
+    "category": "Nylon",
     "modelo": "Multi",
     "precio": 120.5,
     "stock": 15,
@@ -160,7 +160,7 @@
   {
     "id": 15,
     "marca": "Sasame",
-    "categoria": "Anzuelo",
+    "category": "Anzuelo",
     "modelo": "K",
     "precio": 120.5,
     "stock": 15,
@@ -170,7 +170,7 @@
   {
     "id": 16,
     "marca": "Sasame",
-    "categoria": "Anzuelo",
+    "category": "Anzuelo",
     "modelo": "Kamaura",
     "precio": 120.5,
     "stock": 15,
@@ -180,11 +180,41 @@
   {
     "id": 17,
     "marca": "Payo",
-    "categoria": "Cable",
+    "category": "Cable",
     "modelo": "Cable",
     "precio": 120.5,
     "stock": 15,
     "img": "/img/cable.jpg",
     "alt": "Cable"
+  },
+  {
+    "id": 18,
+    "marca": "Dago",
+    "category": "Indumentaria",
+    "modelo": "Botas De Neoprene Dago",
+    "precio": "110.370",
+    "stock": 15,
+    "img": "/img/botas.jpg",
+    "alt": "Botas"
+  },
+  {
+    "id": 19,
+    "marca": "Payo",
+    "category": "Indumentaria",
+    "modelo": "Buzo Micropolar Payo",
+    "precio": "52.000",
+    "stock": 15,
+    "img": "/img/buzopayo.jpg",
+    "alt": "Buzo Micropolar Payo"
+  },
+  {
+    "id": 20,
+    "marca": "Payo",
+    "category": "Indumentaria",
+    "modelo": "Wader Pantalon Con Botas Soldadas Pvc Impermeable Pesca",
+    "precio": "67.795",
+    "stock": 15,
+    "img": "/img/wader.jpg",
+    "alt": "Wader Pantalon Con Botas Soldadas Pvc Impermeable Pesca"
   }
 ]

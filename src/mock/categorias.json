@@ -19,5 +19,9 @@
     "id": 5,
     "name": "Anzuelos",
     "img": "/img/kamaura.jpg"
+  },{
+    "id": 6,
+    "name": "Indumentaria",
+    "img": "/img/wader.jpg"
   }
 ]
