@@ -28,15 +28,15 @@ export const ContactPage = () => {
   };
 
   return (
-    <div className=" mx-auto justify-center items-center  gap-5 p-5 animate-fade-up m-5">
-      <div className="p-5 gap-5 flex flex-col rounded-lg bg-white opacity-90 w-1/2 mx-auto">
+    <div className="  mx-auto justify-center items-center  gap-5 p-5 animate-fade-up m-5">
+      <div className="w-full lg:w-1/2  p-5 gap-5 flex flex-col rounded-lg bg-white opacity-90 mx-auto">
         <h2 className="text-2xl font-bold">Contactanos</h2>
         <p className="text-lg">
           ⌚ Estamos disponibles de lunes a viernes de 9:00 a 18:00
         </p>
         <p className="text-lg">📞 Telefono: 123456789</p>
         <p className="text-lg">📧 Email: contacto@fishingstore.com</p>
-        <div className="flex flex-col  bg-white opacity-90 rounded-lg">
+        <div className="flex flex-col bg-white opacity-90 rounded-lg">
           <form onSubmit={handleSubmit} className="flex flex-col gap-2">
             <label htmlFor="username" className="text-lg font-bold">
               Nombre

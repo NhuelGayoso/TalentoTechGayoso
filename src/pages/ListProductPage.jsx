@@ -27,7 +27,7 @@ export const ListProductPage = () => {
 
   return (
     <div className="flex flex-col  p-10 animate-fade-up gap-2">
-      <div className="flex justify-between mb-10">
+      <div className="flex flex-col lg:flex-row justify-between mb-10">
         <h2 className="text-2xl font-bold text-white">Productos</h2>
         <div className="flex items-center gap-2">
           <label htmlFor="category" className="text-white">
@@ -75,7 +75,7 @@ export const ListProductPage = () => {
           </select>
         </div>
       </div>
-      <div className="grid grid-cols-3 gap-10">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-10">
         {filterProducts(products).map((product) => (
           <Card key={product.id} product={product} />
         ))}

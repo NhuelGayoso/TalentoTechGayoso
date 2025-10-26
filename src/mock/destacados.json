@@ -1,21 +1,21 @@
 [
   {
     "id": 1,
-    "title": "Combo Canias y Reel Okuma",
+    "title": "Combo Canias y Reel",
     "description": "Combos de alto rendimiento",
     "img": "/img/caniasyreel.jpg",
     "alt": "cania y reel"
   },
   {
     "id": 2,
-    "title": "Accesorios Okuma",
+    "title": "Accesorios",
     "description": "Soluciones para tu pesca",
     "img": "/img/accesorios.jpg",
     "alt": "accesorios"
   },
   {
     "id": 3,
-    "title": "Vestimenta Okuma",
+    "title": "Vestimenta",
     "description": "Todo para tu pesca",
     "img": "/img/wader.jpg",
     "alt": "vestimenta"

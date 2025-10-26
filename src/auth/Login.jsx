@@ -2,6 +2,14 @@ import dorado from "../../public/img/dorado.jpg";
 import { Button } from "../components/Button";
 
 export const Login = () => {
+
+
+const handleSubmit = (e) => {
+  e.preventDefault();
+  alert("Registrado correctamente");
+}
+
+
   return (
     <div className="">
       <div className=" flex justify-center items-center h-screen text-white">
@@ -14,7 +22,7 @@ export const Login = () => {
         </div>
         <div className="lg:p-36 md:p-52 sm:20 p-8 w-full lg:w-1/2">
           <h1 className="text-2xl font-semibold mb-4">Iniciar Sesion</h1>
-          <form action="#" method="POST">
+          <form action="#" method="POST" onSubmit={handleSubmit}>
             <div className="mb-4">
               <label for="username" className="block text-white">
                 Usuario

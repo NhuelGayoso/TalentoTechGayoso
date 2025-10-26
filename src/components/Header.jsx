@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export const Header = () => {
   return (
-    <header className="grid grid-cols-3 items-center text-white border-b border-gray-200 p-2 ">
+    <header className="flex flex-col justify-center lg:grid lg:grid-cols-3 items-center text-white border-b border-gray-200 p-2 ">
       <div>
         <Link to="/" className="flex gap-2 items-center">
           <img src={logo} alt="" className="w-15" />
