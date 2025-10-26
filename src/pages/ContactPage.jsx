@@ -28,7 +28,7 @@ export const ContactPage = () => {
   };
 
   return (
-    <div className=" mx-auto justify-center items-center  bg-[url('/img/fondoContacto.jpg')] bg-cover bg-center gap-5 p-5 animate-fade-up m-5">
+    <div className=" mx-auto justify-center items-center  gap-5 p-5 animate-fade-up m-5">
       <div className="p-5 gap-5 flex flex-col rounded-lg bg-white opacity-90 w-1/2 mx-auto">
         <h2 className="text-2xl font-bold">Contactanos</h2>
         <p className="text-lg">
