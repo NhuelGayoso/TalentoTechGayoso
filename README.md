@@ -18,7 +18,7 @@ Un e-commerce moderno para amantes de la pesca, desarrollado con React y Vite. L
 - **Frontend**: React 19
 - **Estilización**: Tailwind CSS
 - **Enrutamiento**: React Router DOM
-- **Gestión de estado**: Context API
+- **Gestión de estado**: Context API falta logica 😡😡 que me cuesta
 - **Iconos**: React Icons
 - **Bundler**: Vite
 
