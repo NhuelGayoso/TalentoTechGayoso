@@ -1,10 +1,12 @@
 import { Link } from "react-router-dom";
 import { Button } from "./Button";
+import { useAppContext } from "../context/AppContext";
 
 export const Card = ({ product }) => {
+  const { agregarAlCarrito } = useAppContext();
   return (
     <div className=" bg-gray-400 items-center justify-center p-5 rounded-lg">
-      <div className="max-w-sm w-full bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all">
+      <div className=" w-full bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all">
         <div className="relative">
           <img
             src={product.img}
@@ -30,13 +32,15 @@ export const Card = ({ product }) => {
               </p>
             </div>
             <hr className="my-4" />
-            <div className="flex flex-col lg:flex-row items-center gap-2">
+            <div className="flex flex-col items-center gap-2">
               <Link to={`/listproduct/${product.id}`} state={{ product }}>
                 <Button boton="Mas Detalles"></Button>
               </Link>
-              <Link to={`/cart/${product.id}`} state={{ product }}>
-                <Button boton="Agregar al carrito" />
-              </Link>
+
+              <Button
+                boton="Agregar al carrito"
+                onClick={() => agregarAlCarrito(product)}
+              />
             </div>
           </div>
         </div>

@@ -75,7 +75,7 @@ export const ListProductPage = () => {
           </select>
         </div>
       </div>
-      <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-10">
+      <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-10">
         {filterProducts(products).map((product) => (
           <Card key={product.id} product={product} />
         ))}
