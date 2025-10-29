@@ -6,7 +6,7 @@ export const Card = ({ product }) => {
   const { agregarAlCarrito } = useAppContext();
   return (
     <div className=" bg-gray-400 items-center justify-center p-5 rounded-lg">
-      <div className=" w-full bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all">
+      <div className="h-[500px] w-full bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all">
         <div className="relative">
           <img
             src={product.img}
