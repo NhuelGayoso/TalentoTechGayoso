@@ -94,3 +94,5 @@ src/
 - [ ] Sistema de reseñas de productos
 - [ ] Filtros avanzados de búsqueda
 - [ ] Lista de deseos
+
+## Link de Netlify https://fishing-store.netlify.app/
