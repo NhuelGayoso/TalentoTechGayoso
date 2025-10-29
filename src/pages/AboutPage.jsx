@@ -1,6 +1,6 @@
 export const AboutPage = () => {
   return (
-    <div className="h-[80vh] flex flex-col items-center bg-gray-300  justify-center text-left m-auto animate-fade-up">
+    <div className=" flex flex-col items-center bg-gray-300  justify-center text-left m-auto animate-fade-up">
       <div className="flex flex-col gap-10 w-[80%] m-10 p-10 bg-white rounded-lg">
         <h2 className="text-2xl font-bold ">Quienes Somos</h2>
         <div className="flex flex-col gap-10 w-[80%]">
