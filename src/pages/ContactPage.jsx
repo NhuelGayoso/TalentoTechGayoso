@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Button } from "../components/Button";
+import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
 export const ContactPage = () => {
@@ -85,7 +85,7 @@ export const ContactPage = () => {
               value={user.message}
               onChange={handleMessageInput}
             ></textarea>
-            <Button boton="Enviar" />
+            <Button>Enviar</Button>
           </form>
         </div>
       </div>

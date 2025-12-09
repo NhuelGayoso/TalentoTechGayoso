@@ -1,40 +1,32 @@
 import river from "/img/river.jpg";
-import { Button } from "../components/Button";
+import { Button } from "@/components/ui/button";
 import { FeaturedProduct } from "../components/FeaturedProduct";
 import { ForCategories } from "../components/ForCategories";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import destacados from "../mock/destacados.json";
 import { useState } from "react";
+import { Hero } from "../components/Hero";
 
 export const HomePages = () => {
   const [products, setProducts] = useState([]);
-
 
   useEffect(() => {
     setProducts(destacados);
   }, []);
 
   return (
-    <div className="animate-fade-up">
+    <div className="animate-fade-up w-[80%] mx-auto">
       <div
-        style={{ backgroundImage: `url(${river})`, opacity: 0.9 }}
+        style={{ backgroundImage: `url(${river})` }}
         className="bg-cover bg-center h-100 flex justify-center items-center "
       >
-        <div className="flex flex-col justify-center items-center h-full w-100 text-center gap-5">
-          <h1 className="text-4xl font-bold ">
-            Equipate para la próxima aventura
-          </h1>
-          <p className="text-white">
-            Explora nuestra amplia selección de equipos y ropa de pesca para que
-            tu proximo viaje sea inolvidable.
-          </p>
-          <Link to="/listproduct">
-            <Button boton="Ver Productos" />
-          </Link>
-        </div>
+        <Hero
+          title="Equipate para la próxima aventura"
+          subTitle="Explora nuestra amplia selección de equipos y ropa de pesca para que tu proximo viaje sea inolvidable."
+        />
       </div>
-      <FeaturedProduct products={products}/>
+      <FeaturedProduct products={products} />
       <ForCategories />
     </div>
   );

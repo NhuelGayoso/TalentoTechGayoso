@@ -2,16 +2,17 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
 
-import { BrowserRouter } from "react-router-dom";
-import { App } from "./App";
-import { AppProvider } from "./context/AppContext";
+import { RouterProvider } from "react-router-dom";
+import { router } from "./routes/AppRouter";
+import { CarritoProvider } from "./context/CarritoContext";
+import { AuthProvider } from "./context/AuthContext";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <BrowserRouter>
-      <AppProvider>
-        <App />
-      </AppProvider>
-    </BrowserRouter>
+    <AuthProvider>
+      <CarritoProvider>
+        <RouterProvider router={router} />
+      </CarritoProvider>
+    </AuthProvider>
   </StrictMode>
 );

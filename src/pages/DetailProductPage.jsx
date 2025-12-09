@@ -1,126 +1,80 @@
-import { Link, useParams, useLocation } from "react-router-dom";
-import { Button } from "../components/Button";
+import { useLocation, useNavigate } from "react-router-dom";
+import { Button } from "@/components/ui/button";
+import { useContext } from "react";
+import { CarritoContext } from "../context/CarritoContext";
 
 export const DetailProductPage = () => {
-  const { id } = useParams();
-  const location = useLocation();
-  const product = location.state?.product;
+  const { state } = useLocation();
+  const product = state?.product;
+  const navigate = useNavigate();
+  const { agregarAlCarrito } = useContext(CarritoContext);
 
   if (!product) {
     return (
-      <div>
-        <h1>Producto no encontrado</h1>
-        <Link to="/listproduct">Volver a la lista de productos</Link>
+      <div className="text-center p-10">
+        <h1 className="text-2xl font-bold mb-4">Producto no encontrado</h1>
+        <Button onClick={() => navigate(-1)}>Volver atrás</Button>
       </div>
     );
   }
 
   return (
-    <div
-      className="flex flex-col max-w-4xl mx-auto bg-gray-400 shadow-lg rounded-lg overflow-hidden m-5 text-black"
-      key={id}
-    >
-      <div className="flex flex-col lg:flex-row items-center  ">
-        <div className="md:w-1/2 p-5 relative">
-          <div className=" ">
+    <div className="container mx-auto p-4 max-w-6xl animate-fade-up">
+      <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+        <div className="md:flex">
+          <div className="md:flex-shrink-0">
             <img
-              src={product.img}
-              alt={product.modelo}
-              className="w-full h-[500px] object-cover rounded-lg"
+              className="h-96 w-full object-cover md:w-96"
+              src={product.img[0]}
+              alt={product.nombre}
             />
           </div>
-        </div>
+          <div className="p-8">
+            <div className="space-y-4">
+              <h1 className="text-3xl font-bold text-gray-900">
+                {product.nombre}
+              </h1>
 
-        <div className="md:w-1/2 p-6">
-          <h1 className="text-2xl font-bold text-black mb-2">
-            {product.modelo}
-          </h1>
-          <p className="text-sm text-black mb-4">{product.descripcion}</p>
+              <div className="space-y-2">
+                <h3 className="text-lg font-semibold text-gray-800">
+                  Descripción: {product.descripcion}
+                </h3>
+                <p className="text-gray-600 leading-relaxed">
+                  {product.descripcion}
+                </p>
+              </div>
 
-          <ul className="text-sm text-black mb-6">
-            <li className="flex items-center mb-1">
-              <svg
-                className="w-4 h-4 mr-2 text-black"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M5 13l4 4L19 7"
-                ></path>
-              </svg>
-              {product.marca}
-            </li>
-            <li className="flex items-center mb-1">
-              <svg
-                className="w-4 h-4 mr-2 text-black"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M5 13l4 4L19 7"
-                ></path>
-              </svg>
-              {product.tipo}
-            </li>
-            <li className="flex items-center">
-              <svg
-                className="w-4 h-4 mr-2 text-black"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M5 13l4 4L19 7"
-                ></path>
-              </svg>
-              {product.longitud}
-            </li>
-            <li className="flex items-center">
-              <svg
-                className="w-4 h-4 mr-2 text-black"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M5 13l4 4L19 7"
-                ></path>
-              </svg>
-              {product.grafito}
-            </li>
-          </ul>
+              {product.caracteristicas && (
+                <div className="space-y-2">
+                  <h3 className="text-lg font-semibold text-gray-800">
+                    Características:
+                  </h3>
+                  <ul className="list-disc pl-5 text-gray-600 space-y-1">
+                    {product.caracteristicas.map((caracteristica, index) => (
+                      <li key={index}>{caracteristica}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
 
-          <div className="flex items-center justify-between mb-4">
-            <div>
-              <span className="text-3xl font-bold text-gray-900">
-                ${product.precio}
-              </span>
+              <div className="pt-2">
+                <p className="text-2xl font-bold text-primary">
+                  ${product.precio}
+                </p>
+                {product.stock > 0 ? (
+                  <p className="text-sm text-green-600 mt-1">
+                    En stock - {product.stock} unidades disponibles
+                  </p>
+                ) : (
+                  <p className="text-sm text-red-600 mt-1">Sin stock</p>
+                )}
+              </div>
             </div>
-          </div>
-
-          <p className="text-green-600 text-sm font-extrabold mb-4">En Stock</p>
-
-          <div className="flex space-x-4">
-            <Button boton="Comprar"></Button>
-            <Button boton="Agregar al carrito"></Button>
+            <div className="mt-6">
+              <Button onClick={() => agregarAlCarrito(product)}>
+                Añadir al carrito
+              </Button>
+            </div>
           </div>
         </div>
       </div>

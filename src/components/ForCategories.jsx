@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import { Button } from "./Button";
 import { useEffect, useState } from "react";
 import categorias from "../mock/categorias.json";
+import { Button } from "@/components/ui/button";
 
 export const ForCategories = () => {
   const [categories, setCategories] = useState([]);
@@ -17,7 +17,7 @@ export const ForCategories = () => {
         <div className="grid grid-cols-2 lg:grid-cols-6 gap-10">
           {categories?.map((category) => (
             <div className="flex flex-col p-5 justify-center items-center bg-white rounded-lg border border-gray-400 ">
-              <div>
+              <div key={category.id}>
                 <img
                   src={category.img}
                   alt=""
@@ -27,7 +27,7 @@ export const ForCategories = () => {
               <div className="flex flex-col items-center gap-5">
                 <h2 className="text-xl font-bold">{category.name}</h2>
                 <Link to="/listproduct">
-                  <Button boton="Ver Mas" />
+                  <Button variant="outline">Ver Mas</Button>
                 </Link>
               </div>
             </div>
